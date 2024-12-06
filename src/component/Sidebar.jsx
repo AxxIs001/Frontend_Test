@@ -13,7 +13,7 @@ const Sidebar = ({ isOpen, cart, removeFromCart, closeSidebar }) => {
       }
 
   return (
-    <>
+    <> 
       {/* Overlay */}
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ${
