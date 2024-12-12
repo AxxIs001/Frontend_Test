@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
+import { FaMoneyBillWave , FaShoppingCart, FaUser } from "react-icons/fa";
 
 const Navbar = ({ toggleSidebar }) => {
   return (
@@ -17,17 +17,17 @@ const Navbar = ({ toggleSidebar }) => {
       </div>
 
       <div className="flex items-center gap-8 text-gray-600">
-        <span className="text-lg font-medium flex items-center">
-          <FaShoppingCart className="mr-2" /> 1205 руб.
+        <span className="font-medium flex items-center">
+          <FaMoneyBillWave  className="mr-2" /> 1205 руб.
         </span>
         <button
           onClick={toggleSidebar} 
           className="hover:text-black flex items-center"
         >
-          <FaHeart className="mr-2" /> Закладки
+          <FaShoppingCart className="mr-2" /> Cart
         </button>
         <button className="hover:text-black flex items-center">
-          <FaUser className="mr-2" /> Профиль
+          <FaUser className="mr-2" /> Profile
         </button>
       </div>
     </nav>

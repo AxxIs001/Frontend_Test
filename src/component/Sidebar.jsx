@@ -14,7 +14,6 @@ const Sidebar = ({ isOpen, cart, removeFromCart, closeSidebar }) => {
 
   return (
     <> 
-      {/* Overlay */}
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 transition-opacity duration-300 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -32,9 +31,9 @@ const Sidebar = ({ isOpen, cart, removeFromCart, closeSidebar }) => {
           className="text-black font-bold text-xl mb-4"
         >
         </button>
-        <h2 className="text-2xl font-bold mb-4 ml-4">Корзина</h2>
+        <h2 className="text-2xl font-bold mb-4 ml-4">Cart</h2>
         {cart.length === 0 ? (
-          <p className="ml-4">Корзина пустая</p>
+          <p className="ml-4">Empty cart</p>
         ) : (
           <ul className="ml-4">
             {cart.map((item, index) => (
@@ -63,10 +62,10 @@ const Sidebar = ({ isOpen, cart, removeFromCart, closeSidebar }) => {
         )}
 
         <div className="fixed ml-4 bottom-12  font-bold">
-            <p >Итого: <span className="font-thin">............................................</span> {Count()} руб. </p>
-            <p>Налог 5%: <span className="font-thin">..........................................</span>{Tax()} руб.</p>
+            <p >Total: <span className="font-thin">............................................</span> {Count()} руб. </p>
+            <p>Tax 5%: <span className="font-thin">..........................................</span>{Tax()} руб.</p>
             <button className="w-80 mt-5 h-11 border rounded-lg bg-[#4aff03b2] text-white flex items-center justify-center ">
-                Оформить заказ <span className="ml-5">🡲</span>
+             Place an order <span className="ml-5">🡲</span>
             </button>
 
         </div>
