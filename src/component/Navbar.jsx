@@ -17,14 +17,14 @@ const Navbar = ({ toggleSidebar }) => {
       </div>
 
       <div className="flex items-center gap-8 text-gray-600">
-        <span className="font-medium flex items-center">
+        <span className="font-medium flex items-center mt-[-4px]">
           <FaMoneyBillWave  className="mr-2" /> 1205 руб.
         </span>
         <button
           onClick={toggleSidebar} 
           className="hover:text-black flex items-center"
         >
-          <FaShoppingCart className="mr-2" /> Cart
+          <FaShoppingCart className="mr-2" />Cart
         </button>
         <button className="hover:text-black flex items-center">
           <FaUser className="mr-2" /> Profile
